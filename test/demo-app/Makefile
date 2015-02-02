@@ -12,7 +12,7 @@ clean:
 
 # Build the file for development.
 build: | $(OUTPUT_DIR)
-	@$(NODE) $(WEBPACK_BIN) $(MAIN) $(OUTPUT_DIR)/$(OUTPUT).js -d
+	@$(NODE) $(WEBPACK_BIN) $(MAIN) $(OUTPUT_DIR)/$(OUTPUT).js -d --display-reasons --display-error-details
 
 .PHONY: build
 .DEFAULT_GOAL = build

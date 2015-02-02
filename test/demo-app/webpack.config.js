@@ -6,12 +6,15 @@ module.exports = {
   resolveLoader: {
     modulesDirectories: ['web_loaders', 'web_modules', 'node_loaders', 'node_modules', '../..']
   },
-
+  
   cache: true,
 
   module: {
     loaders: [
       { test: /\.es6.js$/, loader: 'webpack-traceur?runtime&sourceMaps' }
-    ]
-  }
+    ],
+    noParse: [
+      /traceur-runtime\.js$/
+    ]    
+  },  
 };
