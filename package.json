@@ -27,6 +27,6 @@
     "chalk": "^0.5.0",
     "loader-utils": "^0.2.3",
     "lodash": "^2.4.1",
-    "traceur": "0.0.82"
+    "traceur": "git+https://github.com/google/traceur-compiler/commits/master#e19973caae9cf5fc24a1db881aeebdb723772544"
   }
 }
